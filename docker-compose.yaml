@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  cms:
+    container_name: nuancias_cms
+    image: strapi-cms
+    build: .
+    command: yarn develop
+    ports:
+      - 1337:1337
+    environment:
+      DATABASE_HOST: db
+    volumes:
+      - .:/home/api
+      - /home/api/node_modules
+    restart: unless-stopped
+    depends_on:
+      - db
+  db:
+    container_name: nuancias_postgres
+    image: postgres:14rc1-alpine
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_DB: ${DATABASE_NAME}
+      POSTGRES_USER: ${DATABASE_USERNAME}
+      POSTGRES_PASSWORD: ${DATABASE_PASSWORD}
+      PG_DATA: /var/lib/postgresql/data
+    volumes:
+      - app_db_data:/var/lib/postgresql/data
+volumes:
+  app_db_data:
