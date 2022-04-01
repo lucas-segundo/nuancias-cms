@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "categories",
+  "collectionName": "tags",
   "info": {
-    "singularName": "category",
-    "pluralName": "categories",
-    "displayName": "Category",
+    "singularName": "tag",
+    "pluralName": "tags",
+    "displayName": "Tag",
     "description": ""
   },
   "options": {
@@ -14,14 +14,14 @@
   "attributes": {
     "title": {
       "type": "string",
-      "required": true,
-      "unique": true
+      "unique": true,
+      "required": true
     },
     "posts": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "manyToMany",
       "target": "api::post.post",
-      "mappedBy": "category"
+      "inversedBy": "tags"
     }
   }
 }

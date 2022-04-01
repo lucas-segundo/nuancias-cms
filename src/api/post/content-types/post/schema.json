@@ -41,11 +41,11 @@
       "target": "plugin::users-permissions.user",
       "inversedBy": "posts"
     },
-    "category": {
+    "tags": {
       "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::category.category",
-      "inversedBy": "posts"
+      "relation": "manyToMany",
+      "target": "api::tag.tag",
+      "mappedBy": "posts"
     }
   }
 }
