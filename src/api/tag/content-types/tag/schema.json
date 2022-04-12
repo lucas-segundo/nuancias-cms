@@ -22,6 +22,11 @@
       "relation": "manyToMany",
       "target": "api::post.post",
       "inversedBy": "tags"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
     }
   }
 }

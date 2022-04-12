@@ -1674,6 +1674,9 @@
                                                                           }
                                                                         }
                                                                       },
+                                                                      "slug": {
+                                                                        "type": "string"
+                                                                      },
                                                                       "createdAt": {
                                                                         "type": "string",
                                                                         "format": "date-time"
@@ -1722,6 +1725,9 @@
                                                               }
                                                             }
                                                           }
+                                                        },
+                                                        "preview": {
+                                                          "type": "string"
                                                         },
                                                         "createdAt": {
                                                           "type": "string",
@@ -1843,6 +1849,9 @@
                                     }
                                   }
                                 }
+                              },
+                              "preview": {
+                                "type": "string"
                               },
                               "createdAt": {
                                 "type": "string",
@@ -3827,6 +3836,9 @@
                                                                         }
                                                                       }
                                                                     },
+                                                                    "slug": {
+                                                                      "type": "string"
+                                                                    },
                                                                     "createdAt": {
                                                                       "type": "string",
                                                                       "format": "date-time"
@@ -3875,6 +3887,9 @@
                                                             }
                                                           }
                                                         }
+                                                      },
+                                                      "preview": {
+                                                        "type": "string"
                                                       },
                                                       "createdAt": {
                                                         "type": "string",
@@ -3996,6 +4011,9 @@
                                   }
                                 }
                               }
+                            },
+                            "preview": {
+                              "type": "string"
                             },
                             "createdAt": {
                               "type": "string",
@@ -5912,6 +5930,9 @@
                                                                         }
                                                                       }
                                                                     },
+                                                                    "slug": {
+                                                                      "type": "string"
+                                                                    },
                                                                     "createdAt": {
                                                                       "type": "string",
                                                                       "format": "date-time"
@@ -5960,6 +5981,9 @@
                                                             }
                                                           }
                                                         }
+                                                      },
+                                                      "preview": {
+                                                        "type": "string"
                                                       },
                                                       "createdAt": {
                                                         "type": "string",
@@ -6081,6 +6105,9 @@
                                   }
                                 }
                               }
+                            },
+                            "preview": {
+                              "type": "string"
                             },
                             "createdAt": {
                               "type": "string",
@@ -7974,6 +8001,9 @@
                                                                         }
                                                                       }
                                                                     },
+                                                                    "slug": {
+                                                                      "type": "string"
+                                                                    },
                                                                     "createdAt": {
                                                                       "type": "string",
                                                                       "format": "date-time"
@@ -8022,6 +8052,9 @@
                                                             }
                                                           }
                                                         }
+                                                      },
+                                                      "preview": {
+                                                        "type": "string"
                                                       },
                                                       "createdAt": {
                                                         "type": "string",
@@ -8143,6 +8176,9 @@
                                   }
                                 }
                               }
+                            },
+                            "preview": {
+                              "type": "string"
                             },
                             "createdAt": {
                               "type": "string",
@@ -8414,6 +8450,9 @@
                           ],
                           "example": "string or id"
                         }
+                      },
+                      "preview": {
+                        "type": "string"
                       },
                       "createdAt": {
                         "type": "string",

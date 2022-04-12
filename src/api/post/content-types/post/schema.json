@@ -46,6 +46,9 @@
       "relation": "manyToMany",
       "target": "api::tag.tag",
       "mappedBy": "posts"
+    },
+    "preview": {
+      "type": "text"
     }
   }
 }
