@@ -11,7 +11,9 @@ module.exports = ({ env }) => ({
         upload: {
           folder: 'nuancias',
         },
-        delete: {},
+        delete: {
+          folder: 'nuancias',
+        },
       },
     },
   },
