@@ -31,10 +31,6 @@
       "type": "uid",
       "required": true
     },
-    "content": {
-      "type": "json",
-      "required": false
-    },
     "user": {
       "type": "relation",
       "relation": "manyToOne",
@@ -47,18 +43,9 @@
       "target": "api::tag.tag",
       "mappedBy": "posts"
     },
-    "preview": {
-      "type": "text"
-    },
-    "assets": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
-      "type": "media",
-      "multiple": true
+    "content": {
+      "type": "richtext",
+      "required": true
     }
   }
 }
